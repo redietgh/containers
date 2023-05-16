@@ -23,7 +23,7 @@ class BST(BinaryTree):
         '''
         super().__init__()
         if xs:
-            slf.insert_list(xs)
+            self.insert_list(xs)
 
     def __repr__(self):
         '''
