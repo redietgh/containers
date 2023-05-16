@@ -15,7 +15,7 @@ class BST(BinaryTree):
         '''
         super().__init__()
         if xs:
-            sf.insert_list(xs)
+            self.insert_list(xs)
 
     def __iter__(self):
         self.index = 0
