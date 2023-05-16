@@ -25,5 +25,18 @@ def range(a, b=None, c=None):
     It is very common for C programs to be 100x longer than their corresponding python programs.
     C code must manage lots of details about the computer manually that python code automates for you.
     Carefully written C code can be faster than the corresponding python code because it can remove some of the overhead of this automation process,
-    but the resulting code is much longer and harder to read/write.
-    '''
+    but the resulting code is much longer and harder to read/write. '''
+    if b is not None:
+        begin = a
+        end = b
+    else:
+        begin = 0
+        end = a
+    if c is not None:
+        skip = c
+    if c is None:
+        skip = 1
+    i = begin
+    while (skip > 0 and i < end) or (skip < 0 and i > end):
+        yield i
+        i += skip
