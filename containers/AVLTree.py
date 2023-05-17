@@ -1,7 +1,7 @@
 '''
 This file implements the AVL Tree data structure.
 The functions in this file are considerably harder than the functions in the
-BinaryTree and BST files,
+BinaryTree and BST files,,
 but there are fewer of them.
 '''
 
